@@ -20,18 +20,19 @@
   <body>
     <div class="container">
       <div class="form__container">
-        <div class="form">
+        <form action="/login" method="post" class="form">
+          @csrf
           <h1 class="form__title">Masuk</h1>
-          <input type="email" placeholder="Masukkan Email" />
-          <input type="password" placeholder="Masukkan Password" />
+          <input type="email" class="@error('email') input--error  @enderror" name="email" id="email" placeholder="Masukkan Email" autofocus required/>
+          <input type="password" name="password" id="password" placeholder="Masukkan Password" required value="{{ old('email') }}"/>
           <button type="submit">Masuk</button>
 
-          <p>Belum Punya Akun ? <a href="">Buat disini</a></p>
+          <p>Belum Punya Akun ? <a href="/register">Buat disini</a></p>
 
-          <a class="form__back" href=""
+          <a class="form__back" href="/"
             ><i class="fa-solid fa-circle-arrow-left"></i
           ></a>
-        </div>
+        </form>
       </div>
     </div>
   </body>

@@ -7,26 +7,26 @@
 @section('container')
   <!-- USER BIODATA -->
   <div class="user__container">
-    <h1 class="user__title">Nama User</h1>
+    <h1 class="user__title">{{ auth()->user()->name }}</h1>
     <div class="user__biodata">
       <h2 class="biodata__title">Biodata</h2>
       <div class="biodata__label">
         <p class="biodata__tag">Nama</p>
-        <p>: Anya</p>
+        <p>: {{ auth()->user()->name }}</p>
       </div>
       <div class="biodata__label">
         <p class="biodata__tag">Email</p>
-        <p>: ahmadtoha@gmail.com</p>
+        <p>: {{ auth()->user()->email }}</p>
       </div>
       <div class="biodata__label">
         <p class="biodata__tag">Nomor HP</p>
-        <p>: 085710481115</p>
+        <p>: {{ auth()->user()->phoneNumber }}5</p>
       </div>
       <div class="biodata__label">
         <p class="biodata__tag">Alamat</p>
-        <p>: Jl. asmodeus</p>
+        <p>: {{ auth()->user()->address }}</p>
       </div>
-      <img src="./assets/images/user/Anya.jpg" alt="" class="user__image" />
+      <img src="./assets/images/user/{{ auth()->user()->photo }}" alt="" class="user__image" />
     </div>
   </div>
 
