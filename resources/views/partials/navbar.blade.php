@@ -1,7 +1,7 @@
 <nav class="navigation">
   <div class="container">
     <a href="/">
-      <img class="navigation__logo" src="./assets/logo/logo.png" alt="logo" />
+      <img class="navigation__logo" src="/assets/logo/logo.png" alt="logo" />
     </a>
     <div class="navigation__list">
       @auth

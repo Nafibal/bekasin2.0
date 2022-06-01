@@ -34,21 +34,24 @@
 
   <!-- PRODUCTS -->
   <div class="product__container">
-    <!-- Single Product -->
-    <a href="" class="product">
-      <img
-        class="product__image"
-        src="./assets/images/product/01.png"
-        alt=""
-      />
-      <div class="product__info">
-        <p class="product__name">Nama Produk</p>
-        <p class="product__seller">Seller</p>
-        <p class="product__price">Rp. 50000</p>
-        <p class="product__category">Elektronik</p>
-      </div>
-    </a>
+    @foreach ($products as $product)
+      <!-- Single Product -->
+        <a href="/product/{{ $product->slug }}" class="product">
+          <img
+            class="product__image"
+            src="./assets/images/product/{{ $product->image }}"
+            alt="{{ $product->name }}"
+          />
+          <div class="product__info">
+            <p class="product__name">{{ $product->name }}</p>
+            <p class="product__seller">{{ $product->user->name }}</p>
+            <p class="product__price">Rp. {{ $product->price * 1000}}</p>
+            <p class="product__category">{{ $product->category->name }}</p>
+          </div>
+        </a>
     <!-- end of single product -->
+    @endforeach
+    
   </div>
 @endsection
 

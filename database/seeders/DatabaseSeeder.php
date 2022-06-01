@@ -3,6 +3,7 @@
 namespace Database\Seeders;
 
 use App\Models\User;
+use App\Models\Product;
 use App\Models\Category;
 use Illuminate\Database\Seeder;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
@@ -53,6 +54,40 @@ class DatabaseSeeder extends Seeder
         Category::create([
             'name' => 'Pakaian Wanita',
             'slug' => 'pakaian-wanita'
+        ]);
+
+        // PRODUK
+        Product::create([
+            'name' => 'Laptop Asus',
+            'slug' => 'laptop-asus',
+            'price' => '4000.00',
+            'category_id' => 1,
+            'user_id' => 2,
+            'description' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut a dignissim sapien. Praesent tincidunt fringilla volutpat. Vestibulum nisi nisl, congue eget est sed, commodo bibendum metus. Suspendisse tincidunt lacinia dui egestas sagittis. Etiam mauris libero, auctor sit amet feugiat nec, ultricies ut nibh. Donec nec egestas nulla. Maecenas laoreet in.'
+        ]);
+        Product::create([
+            'name' => 'Jaket Naruto',
+            'slug' => 'jaket-naruto',
+            'price' => '250.00',
+            'category_id' => 2,
+            'user_id' => 3,
+            'description' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut a dignissim sapien. Praesent tincidunt fringilla volutpat. Vestibulum nisi nisl, congue eget est sed, commodo bibendum metus. Suspendisse tincidunt lacinia dui egestas sagittis. Etiam mauris libero, auctor sit amet feugiat nec, ultricies ut nibh. Donec nec egestas nulla. Maecenas laoreet in.'
+        ]);
+        Product::create([
+            'name' => 'Rok Panjang',
+            'slug' => 'rok-panjang',
+            'price' => '200.00',
+            'category_id' => 3,
+            'user_id' => 2,
+            'description' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut a dignissim sapien. Praesent tincidunt fringilla volutpat. Vestibulum nisi nisl, congue eget est sed, commodo bibendum metus. Suspendisse tincidunt lacinia dui egestas sagittis. Etiam mauris libero, auctor sit amet feugiat nec, ultricies ut nibh. Donec nec egestas nulla. Maecenas laoreet in.'
+        ]);
+        Product::create([
+            'name' => 'Sepatu Boots',
+            'slug' => 'sepatu-boots',
+            'price' => '230.00',
+            'category_id' => 2,
+            'user_id' => 3,
+            'description' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut a dignissim sapien. Praesent tincidunt fringilla volutpat. Vestibulum nisi nisl, congue eget est sed, commodo bibendum metus. Suspendisse tincidunt lacinia dui egestas sagittis. Etiam mauris libero, auctor sit amet feugiat nec, ultricies ut nibh. Donec nec egestas nulla. Maecenas laoreet in.'
         ]);
     }
 }
