@@ -23,8 +23,8 @@
         <form action="/login" method="post" class="form">
           @csrf
           <h1 class="form__title">Masuk</h1>
-          <input type="email" class="@error('email') input--error  @enderror" name="email" id="email" placeholder="Masukkan Email" autofocus required/>
-          <input type="password" name="password" id="password" placeholder="Masukkan Password" required value="{{ old('email') }}"/>
+          <input type="email" class="@error('email') input--error  @enderror" name="email" id="email" placeholder="Masukkan Email" autofocus required  value="{{ old('email') }}"/>
+          <input type="password" name="password" id="password" placeholder="Masukkan Password" required"/>
           <button type="submit">Masuk</button>
 
           <p>Belum Punya Akun ? <a href="/register">Buat disini</a></p>

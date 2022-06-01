@@ -55,3 +55,20 @@ td {
     width: 100px;
     border: 5px;
 }
+
+.table__button {
+    font-size: 28px;
+    color: rgb(90, 210, 132);
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.table__button--red {
+    color: rgb(212, 83, 83);
+    margin-left: 10px;
+}
+
+.inline {
+    display: inline;
+}

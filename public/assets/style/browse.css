@@ -39,11 +39,12 @@
     display: flex;
     flex-wrap: wrap;
     row-gap: 20px;
-    justify-content: space-between;
+    column-gap: 40px;
+    justify-content: flex-start;
 }
 .product {
     border-radius: 10px;
-    width: 200px;
+    width: 220px;
     background-color: #4c946c;
     overflow: hidden;
     text-decoration: none;

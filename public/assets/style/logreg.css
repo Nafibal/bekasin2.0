@@ -14,13 +14,28 @@
     text-align: center;
     position: relative;
 }
+.form--wide {
+    width: 600px;
+}
 .form__title {
     margin-bottom: 20px;
+    font-family: "Montserrat", sans-serif;
 }
-input {
+label {
+    text-align: left;
+    margin-bottom: 10px;
+    font-family: "Montserrat", sans-serif;
+}
+input,
+select,
+trix-editor {
     margin-bottom: 10px;
     padding: 10px 15px;
 }
+trix-editor {
+    text-align: left;
+}
+
 .input--error {
     border: 2px solid red;
 }
@@ -32,7 +47,7 @@ button {
     outline: none;
     cursor: pointer;
     border-radius: 5px;
-    margin-bottom: 10px;
+    margin: 10px 0;
 }
 .form p {
     font-size: 12px;
@@ -44,4 +59,8 @@ button {
     position: absolute;
     left: 30px;
     top: 20px;
+}
+.form__back--wide {
+    left: 35px;
+    top: 45px;
 }

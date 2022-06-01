@@ -28,10 +28,12 @@
       </div>
       <img src="./assets/images/user/{{ auth()->user()->photo }}" alt="" class="user__image" />
     </div>
+    <a href="/dashboard/products"><button class="product__button">Kelola Barang</button></a>
   </div>
 
+
   <!-- LIST BARANG -->
-  <div class="product__container">
+  {{-- <div class="product__container">
     <h1 class="product__title">List Barang</h1>
     <button class="product__button">Tambah Barang</button>
     <table class="product__table">
@@ -61,5 +63,5 @@
         </tr>
       </tbody>
     </table>
-  </div>
+  </div> --}}
 @endsection
